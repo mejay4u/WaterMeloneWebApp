@@ -133,11 +133,11 @@ public partial class _01_UserAuthentication_01_01_Default : System.Web.UI.Page
                 email = mu.Email.ToString();
                
                 string password = Membership.GeneratePassword(7, 4);
-                const string username = "hingepankaj24@hotmail.com";
+                const string username = "hingepankaj24@mail.com";
                 string Password = "1992pankaj";
                 SmtpClient smtpclient = new SmtpClient();
                 System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
-                MailAddress fromaddress = new MailAddress("hingepankaj24@hotmail.com");
+                MailAddress fromaddress = new MailAddress("hingepankaj24@mail.com");
                 smtpclient.Host = "smtp.live.com";
                 smtpclient.Port = 587;
                 mail.From = fromaddress;
@@ -166,11 +166,11 @@ public partial class _01_UserAuthentication_01_01_Default : System.Web.UI.Page
                 string password = Membership.GeneratePassword(7, 4);
                 String name=     Membership.GetUserNameByEmail(par1);
 
-                const string username = "hingepankaj24@hotmail.com";
+                const string username = "hingepankaj24@mail.com";
                 string Password = "1992pankaj";
                 SmtpClient smtpclient = new SmtpClient();
                 System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage();
-                MailAddress fromaddress = new MailAddress("hingepankaj24@hotmail.com");
+                MailAddress fromaddress = new MailAddress("hingepankaj24@mail.com");
                 smtpclient.Host = "smtp.live.com";
                 smtpclient.Port = 587;
                 mail.From = fromaddress;
