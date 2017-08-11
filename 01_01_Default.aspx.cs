@@ -26,6 +26,7 @@ public partial class _01_UserAuthentication_01_01_Default : System.Web.UI.Page
             string Id = Request.QueryString["eq"].ToString();
             if (Id == "404")
             {
+            Session.Clear();
                 Response.Write("Session Expired.Please Login Again!");
             }
         }
